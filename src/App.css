@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+.booktb {
+  font-family: 'Franklin Gothic Medium';
+  border: 5px solid red;
+  background-color: blanchedalmond;
+  color: black;
+}
+
+.booktb td:hover {
+  background-color: #61dafb;
+  color: red;
+}
