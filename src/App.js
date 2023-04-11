@@ -11,12 +11,14 @@ function Library (){
     .select('*')
     setMyBooks(books);
   }
-  getBooks();
+  //getBooks();
   return (
-    <table>
+    <>
+    <button onClick={getBooks}>Get Data</button>
+    <table className="booktb">
     {
       myBooks.map(b => (
-        <tr className='booktb'>
+        <tr>
           <td>{b.title}</td>
           <td>{b.author}</td>
           <td>{b.isbn}</td>
@@ -24,6 +26,7 @@ function Library (){
       ))
     }
     </table>
+    </>
   )
 }
 
